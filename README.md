@@ -17,7 +17,7 @@
   - Moves pieces in the usual manner.
   - Aims to block the Connect4 player from connecting 4 pieces in a line.
 
-### Game Duration:
+### Maximum Moves:
 - Minimum of 4 moves (if Connect4 player wins without interruption).
 - Maximum of 15 moves (if Chess player successfully defends every move).
 
@@ -29,7 +29,7 @@
   - Secures 150 points for a win.
 
 ### Rounds:
--The game was played in Technothlon'23 Round 2, Junior Section.
+- The game was played in Technothlon'23 Round 2, Junior Section.
   
 ## Tech Stack
 - **Backend**: Django
