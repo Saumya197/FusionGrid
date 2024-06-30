@@ -1,0 +1,78 @@
+.drop-zone {
+  height:calc(var(--tile-size)*1.5);
+  position: relative;
+  left:calc(var(--tile-size)*.25);
+  place-content: center;
+  top:-8%;
+ 
+}
+
+.drop-zone  div{
+  width: var(--size);
+    height: calc(1*var(--size));
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(216, 208, 199, 0.905);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.808);
+    background-image: url("../../assets/connect.png");
+  background-size: 70%; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  z-index: 1;
+  
+}
+.drop-zone .active {transition: all ease-in-out 100ms;}
+.drop-zone .active.column-0{margin-left: 0;}
+.drop-zone .active.column-1{margin-left: 10vh;}
+.drop-zone .active.column-2{margin-left: 20vh;}
+.drop-zone .active.column-3{margin-left: 30vh;}
+.drop-zone .active.column-4{margin-left: 40vh;}
+.drop-zone .active.column-5{margin-left: 50vh;}
+.drop-zone .active.column-6{margin-left: 60vh;}
+.drop-zone .active.column-7{margin-left: 70vh;}
+
+@keyframes example {
+  0% {bottom:65vh;}
+
+  100% {bottom: 5vh;}
+}
+
+.coin{
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+.drop-zone .active.row-0 {margin-top: 15vh;}
+.drop-zone .active.row-1 {margin-top: 25vh;}
+.drop-zone .active.row-2 {margin-top: 35vh;}
+.drop-zone .active.row-3 {margin-top: 45vh;}
+.drop-zone .active.row-4 {margin-top: 55vh;}
+.drop-zone .active.row-5 {margin-top: 65vh;}
+.drop-zone .active.row-6 {margin-top: 75vh;}
+.drop-zone .active.row-7 {margin-top: 85vh;}
+
+
+
+
+.drop-zone .active.column--.row--{transition: none}
+
+.connect4 {
+  position: relative;
+  left: -6%; /* Adjust this value to position the element as needed */
+  top: -2%; /* Center vertically within the main container */
+  width: calc(0.3 * var(--size));
+  height: calc(0.3 * var(--size));
+  border-radius: 50%;
+  background-color: rgb(255, 4, 4);
+  box-shadow: 0 0 10px 5px rgb(255, 4, 4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.connect4.active {
+  background-color: rgba(50, 201, 4, 0.831);
+  box-shadow: 0 0 10px 5px rgba(50, 201, 4, 0.831);
+}
+
+
+
+
